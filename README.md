@@ -16,6 +16,8 @@ document.location.href.match(/https:\/\/trello\.com\/card\/.*\.json$/) && fetch(
 
 Alternatively, you can make a bookmark with the code entered in the url field as "javascript: (code)"
 
+![bookmark](https://raw.githubusercontent.com/patwork/trello-save-attachments/main/bookmark.png)
+
 There is a deliberate 500 millisecond delay without which not all files are added to the download queue (web browser self protection?).
 
 Tested in Chrome v102 in Linux.

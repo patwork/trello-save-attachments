@@ -17,10 +17,9 @@ document.location.href.match(/https:\/\/trello\.com\/card\/.*\.json$/) &&
 							const link = document.createElement('a');
 							link.download = action.data.attachment.name;
 							link.href = action.data.attachment.url;
-							document.body.appendChild(link);
-							console.log(link);
 							link.click();
-						}, idx * 250);
+							console.log(link);
+						}, idx * 500);
 				})
 		)
 		.catch((err) => alert(err));
